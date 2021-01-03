@@ -67,6 +67,8 @@ class App extends React.Component{
         {
             this.state.option === 'DOWNSTREAM' && 
               <Form.Group>
+
+                <h3>Calculate Time in Positive Y-direction</h3>
                 <Form.Label>Enter width of the river</Form.Label>
                 <Form.Control type="Number" value={distance} onChange={this.handleChange} name="distance" /><br/><br/>
                 <Form.Label>Enter V velocity of the swimmer</Form.Label>
@@ -84,6 +86,7 @@ class App extends React.Component{
          {
               this.state.option === 'UPSTREAM' &&
                 <Form.Group>
+                   <h3>Calculate Time in Negative Y-direction</h3>
                   <Form.Label>Enter width of the river</Form.Label>
                   <Form.Control type="Number" value={distance} onChange={this.handleChange} name="distance" /> <br/><br/>
                   <Form.Label>Enter V velocity of the swimmer</Form.Label>
