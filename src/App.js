@@ -73,7 +73,7 @@ class App extends React.Component{
                 <Form.Control type="Number" value={speedOfBoat} onChange={this.handleChange} name="speedOfBoat" /> <br/><br/>
                 <Form.Label>Enter X velocity of the river</Form.Label>
                 <Form.Control type="Number" value={speedOfStream} onChange={this.handleChange} name="speedOfStream" /> <br/><br/>
-                <h3>Time taken to cover {distance} Km with the speed {speed}  km/hr is {timeTaken_in_Y_direction} hr</h3>
+                <h3>Time taken to cover {distance} m with the speed {speed}  m/sec is {timeTaken_in_Y_direction} sec</h3>
               </Form.Group>
         
             
@@ -90,7 +90,7 @@ class App extends React.Component{
                   <Form.Control type="Number" value={speedOfBoat} onChange={this.handleChange} name="speedOfBoat" /> <br/><br/>
                   <Form.Label>Enter X velocity of the river</Form.Label>
                   <Form.Control type="Number" value={speedOfStream} onChange={this.handleChange} name="speedOfStream" /> <br/><br/>
-                  <h3>Time taken to cover distance {distance} Km with the speed of {speed}  km/hr is {timeTaken_in_opp_Y_direction} hr</h3>
+                  <h3>Time taken to cover distance {distance} m with the speed of {speed}  m/sec is {timeTaken_in_opp_Y_direction} sec</h3>
                 </Form.Group>
           }
           </div>
