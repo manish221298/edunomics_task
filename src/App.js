@@ -13,7 +13,7 @@ class App extends React.Component{
     super()
     this.state={
       speedOfStream: 0,
-      speedOfBoat: 0,
+      speedOfBoat: 1,
       distance: 0,
       select: ["Select Option",'DOWNSTREAM','UPSTREAM'],
       option: ""
@@ -73,7 +73,7 @@ class App extends React.Component{
                 <Form.Control type="Number" value={speedOfBoat} onChange={this.handleChange} name="speedOfBoat" /> <br/><br/>
                 <Form.Label>Enter X velocity of the river</Form.Label>
                 <Form.Control type="Number" value={speedOfStream} onChange={this.handleChange} name="speedOfStream" /> <br/><br/>
-                <h3>Time taken to cover {distance} m with the speed {speed}  m/sec is {timeTaken_in_Y_direction} sec</h3>
+                <h3 className="text-dark">Time taken to cover {distance} m with the speed {speed}  m/sec is {timeTaken_in_Y_direction} sec</h3>
               </Form.Group>
         
             
@@ -90,7 +90,7 @@ class App extends React.Component{
                   <Form.Control type="Number" value={speedOfBoat} onChange={this.handleChange} name="speedOfBoat" /> <br/><br/>
                   <Form.Label>Enter X velocity of the river</Form.Label>
                   <Form.Control type="Number" value={speedOfStream} onChange={this.handleChange} name="speedOfStream" /> <br/><br/>
-                  <h3>Time taken to cover distance {distance} m with the speed of {speed}  m/sec is {timeTaken_in_opp_Y_direction} sec</h3>
+                  <h3 className="text-secondary">Time taken to cover distance {distance} m with the speed of {speed}  m/sec is {timeTaken_in_opp_Y_direction} sec</h3>
                 </Form.Group>
           }
           </div>
